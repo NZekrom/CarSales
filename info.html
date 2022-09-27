@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-image:url(https://www.tata.com/content/dam/tata/images/home-page/desktop/logo_card_desktop_362x362.jpg);background-repeat: no-repeat;background-position: 580px 55px;">
+        <h1 style="text-align:center;">INFORMATION</h1>
+        <div style="font-size:30px;">
+            <p id="nam" style="position:absolute;left:500px;top:120px;"></p>
+            <p id="prc" style="position:absolute;right:500px;top:120px;"></p>
+        </div>
+        <form action="thanks.html" style="font-size: 20px;">
+            <label for="name" style="position:absolute; top: 400px;left: 500px;">Name</label>
+            <input type="text" id="name" name="name" style="position:absolute; top: 400px;right: 500px;" required><br><br>
+            <label for="phone" style="position:absolute; top: 500px;left: 500px;">Phone Number</label>
+            <input type="text" id="phone" name="phone" style="position:absolute; top: 500px;right: 500px;"required><br><br>
+            <input type="submit" value="Submit" style="position:absolute; top: 600px;left: 700px; padding: 17px 30px;">
+        </form>
+        <script>
+            document.getElementById("prc").innerHTML=localStorage.getItem("price")+"L Rs.";
+            document.getElementById("nam").innerHTML=localStorage.getItem("name");
+        </script>
+    </body>
+</html>
